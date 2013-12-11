@@ -17,7 +17,7 @@
 		<?php
 		if (isset($_POST['submitknapp']))
 		{
-			$adresseclean=htmlentities($_POST['adresse'], ENT_QUOTES);
+			$adresseclean=filter_var($_POST['adresse'], FILTER_SANITIZE_URL);
 			?>
 			<div id="url">
 				<?php
