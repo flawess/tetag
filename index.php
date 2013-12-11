@@ -17,11 +17,17 @@
 		<?php
 		if (isset($_POST['submitknapp']))
 		{
-			$adresseclean=filter_var($_POST['adresse'], FILTER_SANITIZE_URL);
+			    $adresse = filter_var($_POST['adresse'], FILTER_SANITIZE_URL);  
+			    if (filter_var($adresse, FILTER_VALIDATE_URL)) {  
+			        echo "$adresse is a valid URL.<br/><br/>";  
+			    } else {  
+			        echo "$adresse is <strong>NOT</strong> a valid URL.<br/><br/>";  
+			    }  
+
 			?>
 			<div id="url">
 				<?php
-					echo "$adresseclean";
+					echo "$adresse";
 				?>
 			</div>
 			<?php
