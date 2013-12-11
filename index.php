@@ -21,7 +21,7 @@
 			?>
 			<div id="url">
 				<?php
-					echo "$adresse";
+					echo "$adresseclean";
 				?>
 			</div>
 			<?php
