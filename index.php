@@ -19,7 +19,7 @@
 		{
 			    $adresse = filter_var($_POST['adresse'], FILTER_SANITIZE_URL);  
 			    if (filter_var($adresse, FILTER_VALIDATE_URL)) {  
-			        echo "<a href=\"'http://'$adresse\">$adresse</a> is a valid URL.<br/><br/>";  
+			        echo "<a href='"'$adresse'"'>$adresse</a> is a valid URL.<br/><br/>";  
 			    } else {  
 			        echo "$adresse is <strong>NOT</strong> a valid URL.<br/><br/>";  
 			    }  
