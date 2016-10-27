@@ -22,11 +22,6 @@
 			    }  
 
 			?>
-			<div id="url">
-				<?php
-					echo "$adresse";
-				?>
-			</div>
 			<?php
 		}
 		?>
